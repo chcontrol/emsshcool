@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin_user extends MX_Controller {
 
-	public function Admin_user()
+	public function __construct()
 	{
 		if($this->session->userdata('type') != 'admin'){
 			redirect(base_url('admin'));
