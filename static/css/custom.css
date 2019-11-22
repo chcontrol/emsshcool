@@ -1,0 +1,72 @@
+.title,.card-title{
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 2px;
+}
+.card-title{
+	font-size: 1.5em;
+}
+#article .card .content{
+    min-height: 475px;
+}
+.profile-page .card-background .content{
+    padding: 40% 0;
+}
+.main{	
+	font-size: 16px;
+	line-height: 1.4em;
+}
+ul.no-list{
+	padding-left: 0;
+	margin-left: 0;
+}
+ul.no-list li{
+	list-style:none;
+}
+.main ul.martop li+li{
+	margin-top:10px;
+}
+.page-header.header-small{
+	height:40vh;
+}
+.navbar .navbar-nav > li > a{
+	font-size:14px;
+}
+.card-background .card-title{
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+}
+pre{
+	background-color: #fff;
+    border: 0;
+    border-radius: 0;
+	font-size: 1em;
+	line-height: initial;
+	font-family: initial;
+}
+h2.title{
+	color: #9c27b0;
+}
+a.disabled{
+   pointer-events: none;
+   cursor: default;
+   color: #aaa !important;
+}
+label { color: #333 !important; }
+#users-list{
+	padding: 40px 0;
+}
+.dataTables_wrapper .dataTables_filter input{
+	border: 1px solid #333;
+}
+@media(max-width: 767px){
+	#article .card .content{
+		min-height: 200px;
+	}	
+	.page-header{
+		min-height: 50vh;
+	}
+	iframe{
+		height: 250px !important; 
+	}
+}

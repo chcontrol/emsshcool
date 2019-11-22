@@ -1,0 +1,237 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class User_model extends CI_Model {
+
+	private $table_name = 'users'; 
+	private $default_select = 'id,fb_id,name,username,email,pretest,created_at'; 
+	private $default_order_by = 'created_at desc'; 
+	private $default_limit_start = 0; 
+	private $default_limit_end = 100; 
+
+	public function __construct()
+	{
+		parent::__construct();
+	}
+
+	public function insert($data = NULL)
+	{
+		$result = $this->db->insert($this->table_name, $data);
+		if($result == 1){
+			$id = $this->db->insert_id();
+			return $id;
+		}
+		return FALSE;
+	}
+
+	public function update($where = NULL, $data = NULL) {				
+		if($this->db->field_exists('updated_at', $this->table_name)) {
+			$data['updated_at'] = date('Y-m-d H:i:s');
+		}
+		$this->db->where($where);
+		$result = $this->db->update($this->table_name,$data);
+		if($result == 1){
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
+
+	public function delete($where = NULL) {
+		if($where !== NULL)
+			$this->db->where($where);		
+		$result = $this->db->delete($this->table_name);
+		if($result == 1){
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
+
+	public function all($select = NULL, $start = NULL, $end = NULL, $order_by = NULL)
+	{
+		if($select !== NULL){
+			$this->db->select($select);
+		}else{
+			$this->db->select($this->default_select);
+		}
+		$this->db->from($this->table_name);
+		
+		if($order_by !== NULL)
+			$this->db->order_by($order_by);
+		else
+			$this->db->order_by($this->default_order_by);
+
+		if($start !== NULL && $end !== NULL)
+			$this->db->limit($end, $start);
+		else
+			$this->db->limit($this->default_limit_end, $this->default_limit_start);
+		
+		$records = $this->db->get();
+
+		if($records->num_rows() > 0){
+			return $records->result();
+		}else{
+			return NULL;
+		}
+	}
+
+	public function find($where = NULL, $select = NULL, $start = NULL, $end = NULL, $order_by = NULL)
+	{
+		if($select !== NULL){
+			$this->db->select($select);
+		}else{
+			$this->db->select($this->default_select);
+		}
+		$this->db->from($this->table_name);
+		
+		if($where !== NULL)
+			$this->db->where($where);
+
+		if($order_by !== NULL)
+			$this->db->order_by($order_by);
+		else
+			$this->db->order_by($this->default_order_by);
+
+		if($start !== NULL && $end !== NULL)
+			$this->db->limit($end, $start);
+		else
+			$this->db->limit($this->default_limit_end, $this->default_limit_start);
+		
+		$records = $this->db->get();
+
+		if($records->num_rows() > 0){
+			return $records->result();
+		}else{
+			return NULL;
+		}
+	}
+
+	public function get($where = NULL, $select = NULL)
+	{
+		if($select !== NULL){
+			$this->db->select($select);
+		}else{
+			$this->db->select($this->default_select);
+		}
+		$this->db->from($this->table_name);
+		
+		if($where !== NULL)
+			$this->db->where($where);
+		else 
+			return NULL;
+
+		$this->db->limit(1);
+		
+		$record = $this->db->get();
+
+		if($record->num_rows() > 0){
+			return $record->row();
+		}else{
+			return NULL;
+		}
+	}
+
+	public function existing($where = NULL){
+		$this->db->select('id');
+		$this->db->from($this->table_name);
+		
+		if($where !== NULL)
+			$this->db->where($where);
+		else 
+			return FALSE;
+
+		$this->db->limit(1);
+
+		$record = $this->db->get();
+
+		if($record->num_rows() > 0){
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
+
+	public function count($where = NULL)
+	{
+		if($where !== NULL)
+			$this->db->where($where);
+		$count = $this->db->count_all_results($this->table_name);
+		return $count;
+	}
+
+	public function search($like = NULL, $where = NULL, $select = NULL, $start = NULL, $end = NULL, $order_by = NULL){
+		if($select !== NULL){
+			$this->db->select($select);
+		}else{
+			$this->db->select($this->default_select);
+		}
+		$this->db->from($this->table_name);
+		
+		if($like !== NULL)
+			$this->db->like($like);
+		if($where !== NULL)
+			$this->db->where($where);
+
+		if($order_by !== NULL)
+			$this->db->order_by($order_by);
+		else
+			$this->db->order_by($this->default_order_by);
+
+		if($start !== NULL && $end !== NULL)
+			$this->db->limit($end, $start);
+		else
+			$this->db->limit($this->default_limit_end, $this->default_limit_start);
+		
+		$records = $this->db->get();
+		
+		if($records->num_rows() > 0){
+			return $records->result();
+		}else{
+			return NULL;
+		}
+	}
+
+	public function search_num($like = NULL, $where = NULL){		
+		
+		if($like !== NULL)
+			$this->db->like($like);
+		if($where !== NULL)
+			$this->db->where($where);
+		$count = $this->db->count_all_results($this->table_name);
+		return $count;
+	}
+
+	function get_ajax($limit=0, $offset=0, $order_by='created_at', $direction='DESC',$condition = false, $condition_like = false){        
+        $this->db->order_by($order_by, $direction);
+        if($limit>0)
+        {
+            $this->db->limit($limit, $offset);
+        }
+        if($condition){
+            $this->db->where($condition);
+        }    
+        if($condition_like) {           
+            $this->db->or_like($condition_like);            
+        }               
+        $result = $this->db->get($this->table_name);
+        return $result->result();
+    }
+
+	function count_ajax($limit=0, $offset=0, $order_by='created_at', $direction='DESC',$condition = false, $condition_like = false){        
+        $this->db->order_by($order_by, $direction);
+        if($limit>0)
+        {
+            $this->db->limit($limit, $offset);
+        }
+        if($condition){
+            $this->db->where($condition);
+        }    
+        if($condition_like) {           
+            $this->db->or_like($condition_like);            
+        }               
+        $sum = $this->db->count_all_results($this->table_name);
+        return $sum;
+    }
+}
+?>

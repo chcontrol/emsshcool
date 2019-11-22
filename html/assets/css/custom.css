@@ -1,0 +1,10 @@
+h1.title,.card-title{
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 2px;
+}
+#article .card .content{
+    min-height: 370px;
+}
+.card-background .content{
+    padding: 30% 0;
+}
