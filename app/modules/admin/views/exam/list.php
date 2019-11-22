@@ -6,6 +6,9 @@
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1">
                         <div id="users-list">
+                        <div class="pull-right" style="margin-bottom: 10px;">
+                                <a href="<?php echo base_url('admin/exams/create')?>">เพิ่มชุดแบบทดสอบ</a>
+                        </div>
                             <h2 class="text-center title" style="margin-bottom: 20px;">รายชื่อชุดแบบทดสอบ</h2>
                             <table id="users-list-table" class="display" cellspacing="0" width="100%">
                                 <thead>

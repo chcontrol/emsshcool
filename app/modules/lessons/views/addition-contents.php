@@ -52,6 +52,21 @@
                                 </div>
 		                    </div>
 	                    </div>
+                        <div class="row">
+	                        <div class="col-md-10 col-md-offset-1">
+		                        <div class="row collections">
+                                    <div class="col-md-6">
+                                        <a href="<?php echo base_url('addition-content/3')?>">
+                                            <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l06.jpg') ?>')">
+                                                <div class="content">
+                                                    <h2 class="card-title">อาการฉุกเฉินวิกฤต</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+		                    </div>
+	                    </div>
 			        </div>
 			    </div>
             </div>
