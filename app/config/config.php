@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 if(ENVIRONMENT === 'development'){
-	$config['base_url'] = '';
+	$config['base_url'] = 'http://127.0.0.1:88/emsschool';
 }else{
 	# To-Do: Uncomment After HTTPS is Ready!
 	$config['base_url'] = 'http://ems-school.com/';
