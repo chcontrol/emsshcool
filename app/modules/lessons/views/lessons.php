@@ -33,7 +33,7 @@
                                         <a href="<?php echo base_url('lesson/1')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l03.jpg') ?>')">
                                                 <div class="content">
-                                                    <h2 class="card-title">การแจ้งเหตุเจ็บป่วยฉุกเฉิน</h2>
+                                                    <h2 class="card-title">หน่วยที่ 1 อาการฉุกเฉินวิกฤตที่ส่งผลต่อต่อชีวิตและอวัยวะสำคัญ</h2>
                                                 </div>
                                             </div>
                                         </a>
@@ -42,7 +42,7 @@
                                         <a href="<?php echo base_url('lesson/2')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l04.jpg') ?>')">
                                                 <div class="content">
-                                                    <h2 class="card-title">การปฐมพยาบาล</h2>
+                                                    <h2 class="card-title">หน่วยที่ 2. การแจ้งเหตุขอความช่วยเหลือ 1669</h2>
                                                 </div>
                                             </div>
                                         </a>
@@ -51,7 +51,7 @@
                                         <a href="<?php echo base_url('lesson/3')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l05.jpg') ?>')">
                                                 <div class="content">
-                                                    <h2 class="card-title">การช่วยฟื้นคืนชีพขั้นพื้นฐาน CPR</h2>
+                                                    <h2 class="card-title">หน่วยที่ 3. การช่วยเหลือเบื้องต้นและการปฐมพยาบาล</h2>
                                                 </div>
                                             </div>
                                         </a>
@@ -60,16 +60,16 @@
                                         <a href="<?php echo base_url('lesson/4')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l06.jpg') ?>')">
                                                 <div class="content">
-                                                    <h2 class="card-title">EMS Rally</h2>
+                                                    <h2 class="card-title">หน่วยที่ 4. การช่วยฟื้นคืนชีพขั้นพื้นฐาน (CPR) และการใช้เครื่องกระตุกหัวใจด้วยไฟฟ้า (AED) </h2>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>		
-                                    <div class="col-md-6">
+                                    <div hidden class="col-md-6">
                                         <a href="<?php echo base_url('lesson/6')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l06.jpg') ?>')">
                                                 <div class="content">
-                                                    <h2 class="card-title"> อาการฉุกเฉินที่ควรโทรแจ้ง 1669 และอาการฉุกเฉินวิกฤตที่ส่งผลต่อชีวิตและอวัยวะสำคัญ </h2>
+                                                    <h2 class="card-title"> </h2>
                                                 </div>
                                             </div>
                                         </a>
