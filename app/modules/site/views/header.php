@@ -36,9 +36,9 @@
         }
     </style>
 
-    <body class="components-page">
+    <body class="components-page" >
         <nav class="navbar navbar-transparent navbar-primary navbar-fixed-top navbar-color-on-scroll" role="navigation">
-            <div class="container">
+            <div class="container" >
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button id="menu-toggle" data-toggle="collapse" data-target="#main-menu" type="button" class="navbar-toggle">

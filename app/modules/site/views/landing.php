@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1 class="title text-center" style="font-size:1.8em;line-height:1.5em;">
+                    <h1 class="title text-center" style="font-size:1.8em;line-height:1.5em;color: #000000" >
                         บทเรียนสื่อประสม การแพทย์ฉุกเฉิน<br/>รายวิชา สุขศึกษา สำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 6
                     </h1>
                     <br />                    
-                    <h5 class="text-center">
+                    <h5 class="text-center"  style="color: #000000; font-family: 'Prompt', sans-serif;">
                         นายเกรียงศักดิ์ ยุทโท gto_winter@hotmail.com <br/>
                         โรงเรียนบ้านห้วยไร่สามัคคี   สำนักงานเขตพื้นที่การศึกษาประถมเชียงราย เขต 3 <br/>
                         <!-- สนับสนุนทุนวิจัยโดย สถาบันการแพทย์ฉุกเฉินแห่งชาติ -->

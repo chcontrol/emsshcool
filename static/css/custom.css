@@ -26,7 +26,7 @@ ul.no-list li{
 	margin-top:10px;
 }
 .page-header.header-small{
-	height:40vh;
+	height:35vh;
 }
 .navbar .navbar-nav > li > a{
 	font-size:14px;
@@ -45,7 +45,7 @@ pre{
 	font-family: initial;
 }
 h2.title{
-	color: #9c27b0;
+	color: #1976d2;
 }
 a.disabled{
    pointer-events: none;
