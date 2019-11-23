@@ -81,6 +81,7 @@ $route['recommendation']          = 'site/recommendation';
 $route['objective']       	      = 'site/objective';
 $route['description']             = 'site/description';
 $route['creator']                 = 'site/creator';
+$route['activity']                 = 'site/activity';
 $route['sections']                = 'site/sections';
 $route['lessons']                 = 'lessons';
 $route['media/(:num)']            = 'lessons/media/$1';

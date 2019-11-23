@@ -1,4 +1,4 @@
-<footer class="footer footer-transparent">
+<footer hidden class="footer footer-transparent">
     <div class="container">
         <nav class="pull-left">
             <ul>
