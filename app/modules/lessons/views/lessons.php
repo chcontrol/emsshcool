@@ -64,10 +64,19 @@
                                                 </div>
                                             </div>
                                         </a>
+                                    </div>		
+                                    <div class="col-md-6">
+                                        <a href="<?php echo base_url('lesson/6')?>">
+                                            <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l06.jpg') ?>')">
+                                                <div class="content">
+                                                    <h2 class="card-title"> อาการฉุกเฉินที่ควรโทรแจ้ง 1669 และอาการฉุกเฉินวิกฤตที่ส่งผลต่อชีวิตและอวัยวะสำคัญ </h2>
+                                                </div>
+                                            </div>
+                                        </a>
                                         <div class="pull-right" style="margin-bottom:20px;">
                                             <a href="<?php echo base_url('addition-contents')?>">ความรู้เพิ่มเติม >></a>
                                         </div>
-                                    </div>		                                                           
+                                    </div>	                                                           
                                 </div>
 		                    </div>
 	                    </div>
