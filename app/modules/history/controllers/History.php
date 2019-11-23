@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class History extends MX_Controller {
 
-	public function History()
+	public function __construct()
 	{
 		if($this->session->userdata('user_id') == ''){
             redirect(base_url());
