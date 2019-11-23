@@ -24,7 +24,8 @@ class Exams extends MX_Controller {
     {
         $get_exam_id = $exam_id;
         if($exam_id == 4){
-            $get_exam_id = 5;
+            //กรณีแบบทดสอบก่อนเรียน - หลังเรียน ข้อสอบเป็นคนละชุดกัน>>>  $get_exam_id = 5;
+            $get_exam_id = 4;
         }
         $this->load->model('exams/Exam_Question_Model');
         $where['exam_id'] = $get_exam_id;

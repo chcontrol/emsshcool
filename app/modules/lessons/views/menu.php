@@ -7,6 +7,15 @@
         $pre_disabled = 'disabled';
         $disabled = '';
     }
+
+    // $check = check_pretest($this->uri->segment('2'));
+    // if(!$check){
+    //     $pre_disabled = '';
+    //     $disabled = '';
+    // }else{
+    //     $pre_disabled = '';
+    //     $disabled = '';
+    // }
 ?>
 <ul class="nav nav-pills nav-pills-icons" role="tablist">
     <li <?php if($type =='pre') echo 'class="active"'; ?>>
