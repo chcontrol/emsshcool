@@ -36,16 +36,16 @@
                 <div class="tab-content">                   
                     <div class="tab-pane active work" id="article">
                         <div class="row tim-row">
-                            <h2 class="text-center title">การปฐมพยาบาล</h2>
+                        <h2 class="text-center title">หน่วยที่ 2. </h2>
+                        <h2 class="text-center title">การแจ้งเหตุขอความช่วยเหลือ 1669</h2>
                             <div class="col-md-8 col-md-offset-2">                             
                                 <div class="row collections">                                    
-                                    <img src="<?php echo base_url('static/img/lesson/help22.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-2-1.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help23.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-2-2.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help24.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-2-3.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help25.jpg')?>" class="img-responsive" alt="">
                                     <div class="pull-right" style="margin:20px 0;">
                                         <a href="<?php echo base_url('lessons')?>"><< บทเรียน</a>
                                     </div>

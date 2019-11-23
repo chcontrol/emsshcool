@@ -37,16 +37,16 @@
                 <div class="tab-content">                   
                     <div class="tab-pane active work" id="article">
                         <div class="row tim-row">
-                            <h2 class="text-center title">การช่วยฟื้นคืนชีพขั้นพื้นฐาน CPR</h2>
+                        <h2 class="text-center title">หน่วยที่ 3.</h2>
+                        <h2 class="text-center title">การช่วยเหลือเบื้องต้นและการปฐมพยาบา</h2>
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="row collections">
-                                    <img src="<?php echo base_url('static/img/lesson/help2.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-3-1.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help19.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-3-2.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help20.jpg')?>" class="img-responsive" alt="">
+                                    <img src="<?php echo base_url('static/img/lesson/less-3-3.jpg')?>" class="img-responsive" alt="">
                                     <br/>
-                                    <img src="<?php echo base_url('static/img/lesson/help21.jpg')?>" class="img-responsive" alt="">
                                     <br/>                                                                        
                                 </div>
                             </div>
