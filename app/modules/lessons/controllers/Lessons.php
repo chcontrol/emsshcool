@@ -31,8 +31,6 @@ class Lessons extends MX_Controller {
 		}else if($lesson == 5){
 			$data['meta_title'] = 'การช่วยฟื้นคืนชีพขั้นพื้นฐาน CPR';
 		}else if($lesson == 6){
-			$data['meta_title'] = 'ภาวะภัยพิบัต';
-		}else if($lesson == 7){
 			$data['meta_title'] = 'อาการฉุกเฉินวิกฤต';
 		}
 		$data['type'] = 'lesson';
