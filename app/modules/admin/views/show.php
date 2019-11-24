@@ -30,9 +30,9 @@
                 </div>                
                 <div class="row">
                     <h2 class="title text-center">ผลคะแนนสอบ</h2>
-                    <div class="text-center">
+                    <!-- <div class="text-center">
                         <a target="_blank" href="<?php echo base_url('admin/users/'.$user->id.'/print')?>"><button class="btn">PRINT</button></a><br/>
-                    </div>
+                    </div> -->
                     <legend></legend>
                     <div class="col-md-8 col-md-offset-2">
                         <div class="table-responsive">

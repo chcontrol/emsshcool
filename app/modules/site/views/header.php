@@ -89,9 +89,8 @@
                                 <a href="<?php echo base_url('users/edit'); ?>">แก้ไขข้อมูล</a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url('creator'); ?>">ผู้จัดทำ</a>
+                                <a href="<?php echo base_url('activity'); ?>">กิจกรรม</a>
                             </li>
-
                             <li>
                                 <a href="<?php echo base_url('logout'); ?>">ออกจากระบบ</a>
                             </li>

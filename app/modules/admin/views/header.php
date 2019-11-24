@@ -47,12 +47,12 @@
                     <li>
                         <a href="<?php echo base_url('admin/user-list'); ?>">ผู้เรียนทั้งหมด</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="<?php echo base_url('admin/exam-list'); ?>">ชุดข้อสอบทั้งหมด</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('admin/admin-list'); ?>">ผู้ดูแลทั้งหมด</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="<?php echo base_url('admin/logout'); ?>">ออกจากระบบ</a>
                     </li>

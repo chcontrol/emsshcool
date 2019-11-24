@@ -1,3 +1,8 @@
+<style>
+div{
+    padding:5px;
+}
+</style>
 <?php $this->load->view('site/header'); ?>
 <div class="wrapper">
     <div class="page-header header-filter header-small" data-parallax="active" style="background-image: url('<?php echo base_url('static/img/cover.jpg'); ?>');">
@@ -17,15 +22,46 @@
                     <h2 class="text-center title">กิจกรรม</h2>
                     <legend></legend>
                     <div class="col-md-8 col-md-offset-2">
-                        1. งานประชุมวิชาการ ประจำปี 2562
-                        <br/>
-                        <br/>                        
+                        <p><b>กิจกรรมประชุมระดมความคิดเห็น </b></p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“การพัฒนาโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้ ด้านการแพทย์ฉุกเฉินเชิงสร้างสรรค์อย่างมีส่วนร่วมจังหวัดเชียงราย”
+                            เมื่อวันที่ 7 ตุลาคม 2562 มีการจัดประชุมระดมความคิดเห็น “การพัฒนาโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้
+                            ด้านการแพทย์ฉุกเฉินเชิงสร้างสรรค์อย่างมีส่วนร่วมจังหวัดเชียงราย” ณ โรงแรมบ้านดู่รีสอร์ท จังหวัดเชียงราย โดยมีอาจารย์เกรียงศักดิ์ ยุทโท
+                            ผู้อำนวยการโรงเรียนผ่านศึกสงเคราะห์ 1 ในฐานะนักวิจัยหลักของโครงการเป็นประธานการประชุม ร่วมกับตัวแทนจากหลายหน่วยงานได้แก่
+                            ครูในโรงเรียนที่เข้าร่วมโครงการ ศึกษานิเทศก์จังหวัดเชียงราย โรงพยาบาลเชียงรายประชานุเคราะห์ สำนักงานสาธารณสุขจังหวัดเชียงราย
+                            และสถาบันการแพทย์ฉุกเฉินแห่งชาติ สำหรับการประชุมในครั้งนี้มีวัตถุประสงค์เพื่อชี้แจงวัตถุประสงค์ของโครงการ และร่วมระดมความคิดเห็น
+                            วางแผน พัฒนาโปรแกรมการเรียนรู้ด้านการแพทย์ฉุกเฉินสำหรับนักเรียน เพื่อให้เกิดความเป็นไปได้ในการนำไปปฏิบัติในโรงเรียนที่เข้าร่วมโครงการทั้ง 9 โรงเรียน
+                        </p>
+                        <br />
+                        <br />
                         <ul class="no-list">
-                        <div class="text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-1.jpg')?>" style="max-width: 550px; margin:0 auto 50px;" alt="">
+                            <div class="col-sm-12">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-1.jpg') ?>" style="width:100%; " alt="">
                             </div>
-                                                        <li>2. </li>
-                            <li>3.  </li>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-2.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-3.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-12">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-4.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-5.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-6.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-12">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-9.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-8.jpg') ?>" style="width:100%; " alt="">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-7.jpg') ?>" style="width:100%; " alt="">
+                            </div>
                         </ul>
                     </div>
                 </div>

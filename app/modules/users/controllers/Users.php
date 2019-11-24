@@ -20,9 +20,12 @@ class Users extends MX_Controller {
 					'user_id'  => $user->id,
 					'fb_id'    => $user->fb_id,
 					'fb_name'  => $user->name,
+					'class_room'  => $user->naclass_roomme,
+					'room_no'  => $user->room_no,
+					'school'  => $user->school,
 					'fb_email' => $user->email					
 				));
-				redirect(base_url('sections'));
+				redirect(base_url('lessons'));
 			}else{
 				// email pass is wrong	
 				$this->session->set_flashdata('error', 'อีเมล์ หรือ รหัสผ่านผิด');
@@ -61,10 +64,13 @@ class Users extends MX_Controller {
 					'user_id'  => $id,
 					'fb_name'  => $data['name'],
 					'fb_email' => $data['email'],
-					'pretest'  => 0
+					'pretest'  => 0,
+					'class_room'  => $data['class_room'],
+					'room_no'  => $data['room_no'],					
+					'school'  => $data['school'],					
 				));
 			}				
-			redirect(base_url('sections'));
+			redirect(base_url('lessons'));
 		}else{
 			$this->session->set_userdata(array(
 					'fb_id'    => '',
