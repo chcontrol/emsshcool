@@ -166,6 +166,9 @@ class Users extends MX_Controller {
 		$where['id']       = $this->session->userdata('user_id');
 		$new_data['name']  = $this->input->post('name');
 		$new_data['email'] = $this->input->post('email');
+		$new_data['class_room'] = $this->input->post('class_room');
+		$new_data['room_no'] = $this->input->post('room_no');
+		$new_data['school'] = $this->input->post('school');
 		$this->User_model->update($where,$new_data);
 		redirect(base_url('users/edit'));
 	}

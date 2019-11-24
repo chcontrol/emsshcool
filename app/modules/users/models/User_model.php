@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class User_model extends CI_Model {
 
 	private $table_name = 'users'; 
-	private $default_select = 'id,fb_id,name,username,email,pretest,created_at'; 
+	private $default_select = 'id,fb_id,name,username,email,pretest,class_room,room_no,school,created_at'; 
 	private $default_order_by = 'created_at desc'; 
 	private $default_limit_start = 0; 
 	private $default_limit_end = 100; 
