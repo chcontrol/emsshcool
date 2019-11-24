@@ -48,6 +48,9 @@ class Users extends MX_Controller {
 		if($this->input->post('submit')){			
 			$data['email'] = $this->input->post('email');
 			$data['name']  = $this->input->post('name');					
+			$data['class_room']  = $this->input->post('class_room');					
+			$data['room_no']  = $this->input->post('room_no');					
+			$data['school']  = $this->input->post('school');					
 			$data['password'] = md5($this->input->post('password'));
 			$user = $this->User_model->get(array('email' => $data['email']));
 			if($user !== NULL){

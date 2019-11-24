@@ -46,6 +46,25 @@
 									</span>
 									<input type="password" name="password" required="required" placeholder="รหัสผ่าน" class="form-control" />
 								</div>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">class</i>
+									</span>
+									<input type="text" name="class_room" required="required" placeholder="ชั้น" class="form-control" />
+								</div>
+								
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">room</i>
+									</span>
+									<input type="text" name="room_no" required="required" placeholder="ห้อง" class="form-control" />
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">account_balance</i>
+									</span>
+									<input type="text" name="school" required="required" placeholder="โรงเรียน" class="form-control" />
+								</div>
 							</div>
 							<div class="footer text-center">
                                 <button type="submit" name="submit" value="submit" class="btn btn-primary btn-simple btn-wd btn-lg">SIGN UP</button>								
