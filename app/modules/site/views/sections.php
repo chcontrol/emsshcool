@@ -38,7 +38,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-6">
+                                    <!-- <div class="col-md-6">
                                         <a href="<?php echo base_url('addition-contents')?>">
                                             <div class="card card-background" style="background-image: url('<?php echo base_url('static/img/lesson/l06.jpg') ?>')">
                                                 <div class="content">
@@ -46,7 +46,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>                                    
 		                    </div>
 	                    </div>

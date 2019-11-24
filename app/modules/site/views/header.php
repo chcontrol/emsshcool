@@ -58,9 +58,9 @@
                         <li>
                             <a href="<?php echo base_url('description'); ?>">คำอธิบายวิชา</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo base_url('recommendation'); ?>">คำแนะนำ</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="<?php echo base_url('objective'); ?>">จุดประสงค์</a>
                         </li>

@@ -39,7 +39,7 @@
         </a>
     </li>
     <?php endif; ?>
-    <?php if($this->uri->segment('2') != '4' && $this->uri->segment('2') != '4-2'): ?>
+    <!-- <?php if($this->uri->segment('2') != '4' && $this->uri->segment('2') != '4-2'): ?>
     <li <?php if($type =='media') echo 'class="active"'; ?>>
         <a href="<?php echo base_url('media/'.$this->uri->segment('2')); ?>" class="<?php echo $disabled?>">
             <i class="material-icons">camera</i>
@@ -53,7 +53,7 @@
             ฐานและสถานการณ์ <br/>EMS Rally
         </a>
     </li>
-    <?php endif; ?>
+    <?php endif; ?> -->
     <?php if($this->uri->segment('2') == '4-2'): ?>
     <li <?php if($type =='post') echo 'class="active"'; ?>>
         <a href="<?php echo base_url('posttest/4'); ?>" class="<?php echo $disabled?>">
