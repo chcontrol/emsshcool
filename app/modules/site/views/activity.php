@@ -17,12 +17,14 @@
                     <h2 class="text-center title">กิจกรรม</h2>
                     <legend></legend>
                     <div class="col-md-8 col-md-offset-2">
-                        กิจกรรมต่างๆที่เกิดขึ่น
+                        1. งานประชุมวิชาการ ประจำปี 2562
                         <br/>
                         <br/>                        
                         <ul class="no-list">
-                            <li>1. </li>
-                            <li>2. </li>
+                        <div class="text-center">
+                                <img src="<?php echo base_url('static/img/activity/activity-1-1.jpg')?>" style="max-width: 550px; margin:0 auto 50px;" alt="">
+                            </div>
+                                                        <li>2. </li>
                             <li>3.  </li>
                         </ul>
                     </div>

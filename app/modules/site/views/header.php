@@ -56,21 +56,25 @@
                             <a href="<?php echo base_url(); ?>">หน้าหลัก</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('description'); ?>">คำอธิบายวิชา</a>
+                            <a href="<?php echo base_url("aboutus"); ?>">เกี่ยวกับเรา</a>
                         </li>
+                        <!-- <li>
+                            <a href="<?php echo base_url('description'); ?>">คำอธิบายวิชา</a>
+                        </li> -->
                         <!-- <li>
                             <a href="<?php echo base_url('recommendation'); ?>">คำแนะนำ</a>
                         </li> -->
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo base_url('objective'); ?>">จุดประสงค์</a>
-                        </li>
+                        </li> -->
+
                         <?php if ($this->session->userdata('user_id') == ''): ?>
                             <li>
                                 <a href="<?php echo base_url('login'); ?>">เข้าสู่ระบบ</a>
                             </li>                    
-                            <li>
+                            <!-- <li>
                                 <a href="<?php echo base_url('creator') ?>">ผู้จัดทำ</a>
-                            </li>                    
+                            </li>                     -->
                             <li>
                                 <a href="<?php echo base_url('activity'); ?>">กิจกรรม</a>
                             </li>
@@ -91,7 +95,10 @@
                             <li>
                                 <a href="<?php echo base_url('logout'); ?>">ออกจากระบบ</a>
                             </li>
-                        <?php endif; ?>                    
+                        <?php endif; ?>     
+                        <li>
+                            <a href="<?php echo base_url('creator'); ?>">ติดต่อเรา</a>
+                        </li>               
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
