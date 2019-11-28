@@ -20,7 +20,7 @@ class Users extends MX_Controller {
 					'user_id'  => $user->id,
 					'fb_id'    => $user->fb_id,
 					'fb_name'  => $user->name,
-					'class_room'  => $user->naclass_roomme,
+					'class_room'  => $user->class_room,
 					'room_no'  => $user->room_no,
 					'school'  => $user->school,
 					'fb_email' => $user->email					
