@@ -47,7 +47,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo base_url(); ?>">สถาบันการแพทย์ฉุกเฉิน</a>
+                    <img href="<?php echo base_url(); ?>" src="<?php echo base_url('static/img/logo1_03.gif')?>" style="max-width: 120px;" alt="">
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-menu">
