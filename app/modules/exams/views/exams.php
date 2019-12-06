@@ -52,8 +52,19 @@
                                 echo $i++.'. '.$row->question.'<br/>';
                                 $objs = get_ans($row->id);            
                                 echo '<ul class="martop">';
-                                foreach ($objs as $ans) {                
-                                    echo '<li style="list-style:none"><div class="radio"><label><input type="radio" name="questions['.$row->id.']" value="'.$ans->id.'">'.$ans->answers.'</label></div></li>';
+                                foreach ($objs as $ans) {
+                                    
+                                    $choice = "";
+                                    if($ans->id % 4 == 1 ){
+                                        $choice = "ก";             
+                                    }else if($ans->id % 4 == 2 ){
+                                        $choice = "ข";             
+                                    } else if($ans->id % 4 == 3 ){
+                                        $choice = "ค";             
+                                    }   else if($ans->id % 4 == 0 ){
+                                        $choice = "ง";             
+                                    }     
+                                    echo '<li style="list-style:none"><div class="radio"><label><input type="radio" name="questions['.$row->id.']" value="'.$ans->id.'">'.$choice.'. '.$ans->answers.'</label></div></li>';
                                 }
                                 echo '</ul>';
                             }
