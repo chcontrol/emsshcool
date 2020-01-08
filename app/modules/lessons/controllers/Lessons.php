@@ -17,9 +17,9 @@ class Lessons extends MX_Controller {
 	public function lesson($lesson = NULL)
 	{
 		$check = check_pretest($lesson);		
-		if(!$check){
-			redirect(base_url('pretest/'.$lesson));	
-		}
+		// if(!$check){
+		// 	redirect(base_url('pretest/'.$lesson));	
+		// }
 		if($lesson==1){
 			$data['meta_title'] = 'อาสาฉุกเฉินชุมชน (อฉช.)';
 		}else if($lesson == 2){
