@@ -16,6 +16,7 @@
     //     $pre_disabled = '';
     //     $disabled = '';
     // }
+    $disabled = 'disabled'; //ปิดไม่ให้ทำข้อสอบ
 ?>
 <ul class="nav nav-pills nav-pills-icons" role="tablist">
     <li <?php if($type =='pre') echo 'class="active"'; ?>>
