@@ -36,6 +36,14 @@ class Site extends MX_Controller {
         $this->load->view('activity');
     }
 
+    // Activity_Createing 2
+    public function activity_1() {
+        $this->load->view('activity_1');
+    }
+    public function activity_2() {
+        $this->load->view('activity_2');
+    }
+
     public function sections() {
         $this->load->view('sections');
     }

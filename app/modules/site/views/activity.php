@@ -1,7 +1,7 @@
 <style>
-div{
-    padding:5px;
-}
+    div {
+        padding: 5px;
+    }
 </style>
 <?php $this->load->view('site/header'); ?>
 <div class="wrapper">
@@ -15,6 +15,7 @@ div{
         </div>
     </div>
 
+
     <div class="main main-raised">
         <div class="section">
             <div class="container">
@@ -22,47 +23,35 @@ div{
                     <h2 class="text-center title">กิจกรรม</h2>
                     <legend></legend>
                     <div class="col-md-8 col-md-offset-2">
-                        <p><b>กิจกรรมประชุมระดมความคิดเห็น </b></p>
-                        <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“การพัฒนาโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้ ด้านการแพทย์ฉุกเฉินเชิงสร้างสรรค์อย่างมีส่วนร่วมจังหวัดเชียงราย”
-                            เมื่อวันที่ 7 ตุลาคม 2562 มีการจัดประชุมระดมความคิดเห็น “การพัฒนาโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้
-                            ด้านการแพทย์ฉุกเฉินเชิงสร้างสรรค์อย่างมีส่วนร่วมจังหวัดเชียงราย” ณ โรงแรมบ้านดู่รีสอร์ท จังหวัดเชียงราย โดยมีอาจารย์เกรียงศักดิ์ ยุทโท
-                            ผู้อำนวยการโรงเรียนผ่านศึกสงเคราะห์ 1 ในฐานะนักวิจัยหลักของโครงการเป็นประธานการประชุม ร่วมกับตัวแทนจากหลายหน่วยงานได้แก่
-                            ครูในโรงเรียนที่เข้าร่วมโครงการ ศึกษานิเทศก์จังหวัดเชียงราย โรงพยาบาลเชียงรายประชานุเคราะห์ สำนักงานสาธารณสุขจังหวัดเชียงราย
-                            และสถาบันการแพทย์ฉุกเฉินแห่งชาติ สำหรับการประชุมในครั้งนี้มีวัตถุประสงค์เพื่อชี้แจงวัตถุประสงค์ของโครงการ และร่วมระดมความคิดเห็น
-                            วางแผน พัฒนาโปรแกรมการเรียนรู้ด้านการแพทย์ฉุกเฉินสำหรับนักเรียน เพื่อให้เกิดความเป็นไปได้ในการนำไปปฏิบัติในโรงเรียนที่เข้าร่วมโครงการทั้ง 9 โรงเรียน
-                        </p>
-                        <br />
-                        <br />
-                        <ul class="no-list">
-                            <div class="col-sm-12">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-1.jpg') ?>" style="width:100%; " alt="">
+
+                        <!--start Activity_Createing 3 -->
+                        <div class="col-xs-6">
+                            <div class="card" style="width: 100% ">
+                                <img style="height: 250px" class="card-img-top" src="<?php echo base_url('static/img/activity/activity-1-1.jpg') ?>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        ประชุมระดมความคิดเห็น
+                                    </h6>
+                                    <p class="card-text">การพัฒนาโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้ ด้านการแพทย์ฉุกเฉินเชิงสร้างสรรค์อย่างมีส่วนร่วมจังหวัดเชียงราย</p>
+                                    <a href="<?php echo base_url("activity_1"); ?>" class="btn btn-primary">กิจกรรม</a>
+                                </div>
                             </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-2.jpg') ?>" style="width:100%; " alt="">
+                        </div>
+                        <!-- end Activity_Createing 3 -->
+                        <div class="col-xs-6">
+                            <div class="card" style="width: 100% ">
+                                <img style="height: 250px" class="card-img-top" src="<?php echo base_url('static/img/activity/activity-2-1.jpg') ?>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        โปรแกรมการเรียนรู้
+                                    </h5>
+                                    <p class="card-text">การถ่ายทอดโปรแกรมการเรียนรู้และกระบวนการถ่ายทอดความรู้ด้านการแพทย์ฉุกเฉินสู่การนำร่องไปใช้ในโรงเรียนต้นแบบ จังหวัดเชียงราย</p>
+                                    <a href="<?php echo base_url("activity_2"); ?>" class="btn btn-primary">กิจกรรม</a>
+                                </div>
                             </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-3.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-12">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-4.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-5.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-6.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-12">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-9.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-8.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                            <div class="col-sm-6 text-center">
-                                <img src="<?php echo base_url('static/img/activity/activity-1-7.jpg') ?>" style="width:100%; " alt="">
-                            </div>
-                        </ul>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

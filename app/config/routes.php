@@ -98,3 +98,7 @@ $route['posttest/(:num)']         = 'exams/posttest/$1';
 $route['submit']                  = 'exams/submit';
 $route['404_override']            = '';
 $route['translate_uri_dashes']    = FALSE;
+
+// Activity_Createing 1
+$route['activity_1']                 = 'site/activity_1';
+$route['activity_2']                 = 'site/activity_2';
